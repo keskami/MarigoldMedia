@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  background-color: black;
+  padding: 50px 0;
+  color: white;
+}
+
+.container {
+  width: 55%;
+  margin: 5% auto;
+  text-align: center;
+  display: block;
+}
+
+.about-us h3 {
+  font-size: 2.5rem;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.about-us p {
+  width: 95%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: auto;
+}
+
+#true {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #FF6F00;
+}
+
+#title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 20px auto;
+}
+
+.text-carousel {
+  text-align: left;
+  margin: 0 20px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  overflow: hidden;
+  height: 65px; /* Adjust based on your text size */
+}
+
+.text-carousel div {
+  animation: scrollUp 8s linear infinite 0s;
+}
+
+@keyframes scrollUp {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-68px); /* Adjust based on your text size */
+  }
+  50%, 70% {
+    transform: translateY(-136px); /* Adjust for two lines up */
+  }
+  75%, 100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1300px) {
+  .text-carousel div {
+    animation: none;
+  }
+  .text-carousel, #true, .about-us h3 {
+    font-size: 2.5rem; /* Reduces font size for smaller screens */
+  }
+  .container {
+    width: 80%; /* Allows more space for text */
+  }
+  .text-carousel {
+    height: 48px;
+  }
+  .container p {
+    width: 70%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 790px) {
+  .container {
+    width: 75%; /* Allows more space for text */
+  }
+
+  .text-carousel, #true, .about-us h3 {
+    font-size: 1.7rem; /* Reduces font size for smaller screens */
+  }
+
+  .text-carousel div {
+    animation: none;
+  }
+  .text-carousel {
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 85%; /* Further increase the width on very small screens */
+  }
+
+  .text-carousel, #true, .about-us h3 {
+    font-size: 1.5rem; /* Further reduces font size for smaller screens */
+  }
+
+  /* Further adjust keyframe values based on the new font size */
+  .text-carousel div {
+    animation: none;
+  }
+}

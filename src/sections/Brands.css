@@ -1,0 +1,55 @@
+/* BrandsSection.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  white-space: nowrap; /* Ensure items are in a single line */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  margin:20px 0 50px 0;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.video-container, .image-container {
+  flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+  width: auto; /* Width maintaining aspect ratio 16:9 */
+  height: 270px; /* Height calculated to maintain aspect ratio */
+  margin-right: 10px; /* Adjust based on your layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 5px;
+}
+
+.video-container video {
+  width: 100%; /* Make video fill the container */
+  height: 100%; /* Ensure the video height matches the container */
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.image-container img {
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.reel-dimensions video {
+  width: 178px; /* Example width */
+  height: 316px; /* Example height, maintaining a 9:16 aspect ratio */
+}
+
+img, video {
+  max-width: 100%;
+  max-height: 100%;
+}
+

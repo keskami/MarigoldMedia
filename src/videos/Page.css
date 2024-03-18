@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+.brandsPabloPage {
+    background-color: black;
+    color: black;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 100vh;
+  }
+
+  .logo-container {
+    position: fixed; /* Keep the bar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch across the full screen width */
+    background-color: black; /* Black background */
+    z-index: 110; /* Ensure it's above most other elements but below the logo if needed */
+    padding: 10px 0; /* Add some vertical padding for aesthetic spacing */
+  }
+  
+  .logo2 {
+    margin-left: 20px; /* Adjust as necessary for logo positioning within the bar */
+    height: 100px; /* Adjust based on your logo's size for consistency */
+    cursor: pointer;
+  }
+  
+  .videoCarouselWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: black;
+  }
+  
+  .video-slide {
+    position: relative; /* Ensures a positioning context */
+    width: 100%; /* Full width of the carousel */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .video-slide iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    /* No need to set position: relative here */
+  }
+  
+  .video-slide .caption {
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    z-index: 20; /* Ensures the caption is above the video */
+  }  
+  
+  .videoDescriptionContainer {
+    position: relative;
+    margin-top: 100vh; /* Start showing the description after the fixed carousel space */
+    z-index: 100;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoHeader {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    text-align: center;
+    color: white;
+  }
+  
+  .videoDescription {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 300;
+    width: 6  0%;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 4% auto;
+    font-size: 25px;
+    background-color: white;
+  }
+
+  @media (max-width: 1300px) {
+    .videoHeader {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .videoHeader {
+      font-size: 20px;
+    }
+    .videoDescription {
+      font-size: 20px;
+    }
+  }
+  
+  

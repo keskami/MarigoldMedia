@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.director-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 40px auto;
+  padding: 15px 0;  
+  border-radius: 40px;
+}
+
+.director-buttons button {
+  border: none;
+  padding: 0 20px;
+  font-size:20px;
+  cursor: pointer;
+  color: #999999;
+  background: none;
+  transition: color 0.4s ease;
+}
+
+button:hover {
+  color: black;
+}
+
+#title {
+  padding: 0 40px 0 0;
+  font-size: 30px;
+  color: #999999;
+  font-weight: 700;
+}
+
+.director-portfolio .video-item {
+  margin-bottom: 20px;
+}
+
+.director-portfolio iframe {
+  width: 100%;
+  height: 300px; /* Adjust based on your design */
+}
+
+.director-portfolio p {
+  text-align: center;
+}
+
+#portfolio {
+  background-color: black;
+}
