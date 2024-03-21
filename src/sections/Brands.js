@@ -17,17 +17,17 @@ const imagesRow1 = [
 ];
 
 const videosRow2 = [
-  "https://www.youtube.com/embed/VIDEO_ID5",
-  "https://www.youtube.com/embed/VIDEO_ID6",
+  "https://storage.googleapis.com/marigold_videos/Hard%20Jewlery%20Spec%20Ad.mp4",
+  "https://storage.googleapis.com/marigold_videos/HEYDUDE%20x%20Boopie%20Campaign.mp4",
   "https://storage.cloud.google.com/marigold_videos/BRANDS%20-%20Insomnia%20Cookies%20Challenge%20Announcement.mp4",
-  "https://www.youtube.com/embed/VIDEO_ID8"
+  "https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Izod%20Clothing%20Promo.mp4"
 ];
 
 const imagesRow2 = [
-  "path/to/your/image5.jpg",
-  "path/to/your/image6.jpg",
+  "https://i.ibb.co/6NFDrWt/Untitled-design-57.png",
+  "https://i.ibb.co/xgjYgGv/Untitled-design-58.png",
   "https://i.ibb.co/m5KCRR5/Untitled-design-56.png",
-  "path/to/your/image8.jpg"
+  "https://i.ibb.co/z4ThPjR/Untitled-design-59.png"
 ];
 
 const scrollInterval = 20; // Interval in milliseconds for scrolling

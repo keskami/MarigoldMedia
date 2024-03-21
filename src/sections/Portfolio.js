@@ -51,11 +51,6 @@ const Portfolio = () => {
 
   return (
     <div id='portfolio' className="portfolio-section">
-      <div className="director-buttons">
-        <p id="title">Director Portfolios</p>
-        <p className='director-names'>Lars Petersdorff</p>
-        <p className='director-names'>Pablo Villa  </p>
-      </div>
       <div className="director-portfolio">
         {videos.map((video, index) => (
           <div

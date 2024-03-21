@@ -28,11 +28,11 @@ button:hover {
   color: black;
 }
 
-#title {
-  padding: 0 40px 0 0;
-  font-size: 30px;
-  color: #999999;
+#portfolio-title {
+  font-size: 3.5rem;
   font-weight: 700;
+  color: white;
+  margin: 40px 0;
 }
 
 .director-portfolio .video-item {

@@ -1,0 +1,42 @@
+/* In DirectorPortfolios.css */
+.director-descriptions {
+  margin-bottom: 5%;
+}
+
+.director-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 40px auto;
+    padding: 15px 0;  
+    border-radius: 40px;
+  }
+  
+  #title {
+    padding: 0 40px 0 0;
+    font-size: 20px;
+    color: #999999;
+    font-weight: 700;
+  }
+  
+  .director-names {
+    /* Add button styling here */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #999999;
+    font-size: 20px;
+  }
+  
+  /* Responsive design for the description page */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .director-buttons {
+      flex-direction: column;
+    }
+    
+    /* Add more responsive adjustments as needed */
+  }
+  

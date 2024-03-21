@@ -6,6 +6,7 @@ import Portfolio from './sections/Portfolio';
 import Services from './sections/Services';
 import Brands from './sections/Brands';
 import ContactUs from './sections/ContactUs';
+import DirectorPortfolios from './sections/DirectorPortfolios';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <VideoCarousel />
       <AboutUs />
+      <DirectorPortfolios /> 
       <Portfolio />
       <Services />
       <Brands />

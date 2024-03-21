@@ -29,8 +29,6 @@
 .video-carousel .video-slide {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
   .video-carousel .caption {
@@ -52,3 +50,14 @@
     font-weight: bold;
   }
   
+
+  @media only screen and (max-width: 1000px) {
+    .video-carousel .caption {
+      margin: auto;
+      font-size: 20px; /* Adjust based on your design */
+      text-align: center; /* Use 'center' to center text */
+    }
+    .dir-name {
+      font-size: 40px;
+    }
+  }

@@ -6,13 +6,11 @@ import './VideoCarousel.css'; // Create and customize your CSS file
 
 const videos = [
     {
-      type: 'youtube',
-      src: 'https://geo.dailymotion.com/player/xroum.html?video=x8tszai', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
+      src: 'https://storage.googleapis.com/marigold_videos/FIRST%20IMPRESSION%20-%20Cinematography%20Reel.mp4', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
       caption: <text>Director <br /> <span className='dir-name'>Pablo Villa</span></text>
     },
     {
-      type: 'youtube',
-      src: 'https://galleries.vidflow.co/videos/mvo8owxn', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
+      src: 'https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Coca%20Cola%20Spec%20Ad%20(1).mp4', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
       caption: <text>Director <br /> <span className='dir-name'>Lars Petersdorff</span></text>
     }
     // You can still include other video objects here
@@ -36,16 +34,15 @@ const videos = [
       <Slider {...settings}>
         {videos.map((video, index) => (
           <div key={index} className="video-slide">
-            <iframe
+            <video
               src={video.src}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="YouTube video"
-              frameborder={0}
+              autoPlay
+              muted
+              loop
+              controls={false}
               style={{ width: '100%', height: '100vh' }}
               className="video-wrapper"
-            >
-            </iframe>
+            ></video>
             <div className="caption">{video.caption}</div>
           </div>
         ))}

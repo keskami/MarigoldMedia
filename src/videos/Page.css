@@ -40,7 +40,7 @@
     height: 100vh; /* Full viewport height */
   }
   
-  .video-slide iframe {
+  .video-slide video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,6 +88,13 @@
     font-size: 25px;
     background-color: white;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-director-name {
+    align-self: center;
+    font-weight: 500;
   }
 
   @media (max-width: 1300px) {

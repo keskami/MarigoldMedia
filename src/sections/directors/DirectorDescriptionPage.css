@@ -1,0 +1,41 @@
+/* DirectorDescriptionPage.css */
+.description-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid white;
+    box-sizing: border-box;
+  }
+  
+  .director-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .director-image {
+    width: 100%;
+    max-width: 400px; /* Adjust based on your preference */
+    margin-bottom: 20px;
+  }
+  
+  .director-description {
+    text-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .description-page-container {
+      flex-direction: column;
+    }
+  
+    .director-image {
+      max-width: 300px; /* Smaller images on smaller screens */
+    }
+  }
+  
