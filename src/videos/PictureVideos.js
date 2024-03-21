@@ -21,7 +21,7 @@ const videos = [
   // Additional videos can be added here
 ];
 
-const PicturePablo = () => {
+const PictureVideos = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const settings = {
@@ -69,4 +69,4 @@ const PicturePablo = () => {
   );
 };
 
-export default PicturePablo;
+export default PictureVideos;

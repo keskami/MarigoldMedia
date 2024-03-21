@@ -22,7 +22,7 @@ const videos = [
   },
 ];
 
-const EventsPablo = () => {
+const EventVideos = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const settings = {
@@ -70,4 +70,4 @@ const EventsPablo = () => {
   );
 };
 
-export default EventsPablo;
+export default EventVideos;

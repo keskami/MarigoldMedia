@@ -9,7 +9,8 @@ const videos = [
   {
     id: 1,
     src: 'https://geo.dailymotion.com/player/xrs7e.html?video=x8upm7q',
-    description1: "In this vibrant and jazzy edit, the director captures the essence of a trip to the West Baden Springs Hotel in French Lick, Indiana, a place as rich in history as it is seemingly out of place in its rural surroundings. Through careful selection of shots, the director brings to life the hotel's fascinating past, with a particular focus on its stunning dome architecture and the statues that grace its interiors. The choice of \"Take Five\" as the background score adds a layer of nostalgic elegance to the video, a decision inspired by the moment the song filled the hotel's dome, perfectly encapsulating the ambiance the director aimed to convey. Beyond the architectural marvels, the video intimately portrays the personalities of the friends who were part of the journey, ensuring their experiences and characters shine through, thus creating a narrative that's as much about the camaraderie as it is about the location itself.",
+    description1: "This Coca-Cola commercial showcases the iconic red can amidst a stunning VFX-enhanced backdrop of ice and effervescence, with no storyline but a powerful focus on the product itself. Directed by a visionary who believes in the strategic use of visual effects, the advertisement leverages cutting-edge VFX to highlight the refreshing nature of Coca-Cola. The director aimed to transform a standard product shot into a visually captivating experience, asserting that \"VFX are not for every video, but when they fit in, they will make a massive difference on the production value.\"",
+    description2: " The production meticulously captures the can in hyper-realistic detail, surrounded by ice, with VFX simulating the dynamic splash and fizz of the beverage. These visuals are not just about showcasing the product but about evoking the sensory experience of enjoying a cold Coca-Cola. The commercial's climax features a dramatic, slow-motion spill from the can, emphasizing the refreshment Coca-Cola promises. Through this approach, the commercial not only highlights the product but does so in a way that significantly elevates its appeal, aligning with the director's belief in the transformative power of well-applied visual effects.",
     header: 'Coca-Cola Commercial' // Example header text
   },
   {
@@ -43,7 +44,7 @@ const videos = [
   // Additional videos can be added here
 ];
 
-const PersonalPablo = () => {
+const BrandVideos = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const settings = {
@@ -91,4 +92,4 @@ const PersonalPablo = () => {
   );
 };
 
-export default PersonalPablo;
+export default BrandVideos;

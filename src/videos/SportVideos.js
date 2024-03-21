@@ -27,7 +27,7 @@ const videos = [
   // Additional videos can be added here
 ];
 
-const SportsPablo = () => {
+const SportVideos = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const settings = {
@@ -75,4 +75,4 @@ const SportsPablo = () => {
   );
 };
 
-export default SportsPablo;
+export default SportVideos;
