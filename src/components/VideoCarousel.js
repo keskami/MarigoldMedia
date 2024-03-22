@@ -7,11 +7,9 @@ import './VideoCarousel.css'; // Create and customize your CSS file
 const videos = [
     {
       src: 'https://storage.googleapis.com/marigold_videos/FIRST%20IMPRESSION%20-%20Cinematography%20Reel.mp4', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
-      caption: <text>Director <br /> <span className='dir-name'>Pablo Villa</span></text>
     },
     {
-      src: 'https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Coca%20Cola%20Spec%20Ad%20(1).mp4', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
-      caption: <text>Director <br /> <span className='dir-name'>Lars Petersdorff</span></text>
+      src: 'https://storage.googleapis.com/marigold_videos/Natalie%20%26%20Dylan%20Wedding%20Film.mp4', // Replace YOUR_VIDEO_ID with your actual YouTube video ID
     }
     // You can still include other video objects here
   ];
@@ -43,7 +41,6 @@ const videos = [
               style={{ width: '100%', height: '100vh' }}
               className="video-wrapper"
             ></video>
-            <div className="caption">{video.caption}</div>
           </div>
         ))}
       </Slider>

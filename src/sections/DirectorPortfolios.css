@@ -3,7 +3,7 @@
   margin-bottom: 5%;
 }
 
-.director-buttons {
+.director-header {  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,10 +15,10 @@
   }
   
   #title {
-    padding: 0 40px 0 0;
     font-size: 20px;
     color: #999999;
     font-weight: 700;
+    margin-right: 40px;
   }
   
   .director-names {
@@ -28,15 +28,42 @@
     border: none;
     color: #999999;
     font-size: 20px;
+  } 
+
+  @media (max-width: 900px) {
+    .director-header {  
+      width: 70%;
+    }
+  
+    #title {
+      display: none;
+    }
+
+    .director-names {
+      flex-direction: row;
+      font-size: 20px;
+    }
   }
   
   /* Responsive design for the description page */
-  @media (max-width: 768px) {
+  @media (max-width: 668px) {
     /* Adjust styles for smaller screens */
-    .director-buttons {
-      flex-direction: column;
+
+    .director-header {  
+      width: 80%;
+    }
+
+    #title {
+      display: none;
+    }
+
+    .director-names {
+      flex-direction: row;
+      font-size: 15px;
     }
     
     /* Add more responsive adjustments as needed */
   }
+
+  
   
