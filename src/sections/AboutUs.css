@@ -53,6 +53,7 @@
   font-weight: 700;
   overflow: hidden;
   height: 65px; /* Adjust based on your text size */
+  
 }
 
 .text-carousel div {
@@ -95,7 +96,7 @@
 /* Responsive adjustments */
 @media (max-width: 790px) {
   .container {
-    width: 75%; /* Allows more space for text */
+    width: 100%; /* Allows more space for text */
   }
 
   .text-carousel, #true, .about-us h3 {
