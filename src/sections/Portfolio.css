@@ -101,3 +101,20 @@ button:hover {
   height: auto;
   display: block;
 }
+
+@media only screen and (max-width: 768px) {
+  .director-portfolio {
+    column-count: 1;
+  }
+  .video-item-title span {
+    display: block; /* Makes each span behave like a block */
+    transition: transform 0.3s ease;
+    z-index: 500;
+    color: white; /* Title color */
+    font-size:25px;
+    font-weight: 500;
+  }
+  .video-item:hover .video-item-title span:first-child {
+    transform: none; /* Moves the first line up out of view */
+  }
+}

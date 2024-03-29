@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 import { useNavigate } from 'react-router-dom';
 import './Portfolio.css';
@@ -5,14 +6,30 @@ import './Portfolio.css';
 const Portfolio = () => {
 
   const navigate = useNavigate();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const handleVideoClick = (pagePath) => {
     navigate(pagePath);
   };
 
+
+  const updateScreenWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  // Use useEffect to add the event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener('resize', updateScreenWidth);
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', updateScreenWidth);
+    };
+  }, []);
+
   const videos = [
     {
-      url: "https://storage.cloud.google.com/marigold_videos/BRANDS%20-%20Coca%20Cola%20Spec%20Ad%20(1).mp4",
+      url: "https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Coca%20Cola%20Spec%20Ad%20(1).mp4",
       title: "BRANDS",
       img: "https://i.ibb.co/6gCCjrx/Screenshot-2024-03-18-at-9-08-09-AM.png",
       pagePath: "/brands"
@@ -36,7 +53,7 @@ const Portfolio = () => {
       pagePath: "/events"
     },
     {
-      url: "https://storage.cloud.google.com/marigold_videos/PERSONAL%20-%20Travel%20Project%20(West%20Baden%20Springs)%20(1).mov",
+      url: "https://storage.googleapis.com/marigold_videos/PERSONAL%20-%20Travel%20Project%20(West%20Baden%20Springs)%20(1)%20(1).mp4",
       title: "PERSONAL",
       img: "https://i.ibb.co/F8bY3Wr/Screenshot-2024-03-17-at-8-30-29-PM.png",
       pagePath: "/personal"
@@ -61,7 +78,9 @@ const Portfolio = () => {
           >
             <HoverVideoPlayer
               videoSrc={video.url}
-              pausedOverlay={<img src={video.img} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+              pausedOverlay= {
+                screenWidth > 768 ? <img src={video.img} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : null
+              }
               loadingOverlay={<div className="loading-overlay"><div className="loading-spinner" /></div>}
             />
             <div className="video-item-title">
@@ -77,3 +96,7 @@ const Portfolio = () => {
 
 
 export default Portfolio;
+
+
+
+

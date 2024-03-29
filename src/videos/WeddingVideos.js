@@ -8,7 +8,7 @@ import './Page.css'; // Your CSS file for styling
 const videos = [
   {
     id: 1,
-    src: 'https://storage.googleapis.com/marigold_videos/Natalie%20%26%20Dylan%20Wedding%20Film.mp4',
+    src: 'https://storage.googleapis.com/marigold_videos/natalie.mp4',
     director: "Director: Lars Petersdorff",
     description1: "In the full wedding film featuring Natalie and Dylan, the narrative begins with the first light of dawn, casting a serene glow over the venue that seems to whisper promises of the love-filled day ahead. The film, a harmonious blend of cinematic shots and heartfelt moments, captures the essence of their journey to the altar. As the soft melody of a love song gently rises, viewers are invited into the intimate world of Natalie and Dylan, witnessing the delicate lace of Natalie’s dress, the careful preparation of Dylan’s suit, and the joyful anticipation of friends and family coming together. Each scene is carefully woven together, creating a tapestry of memories that celebrates the beauty of commitment and the warmth of two families uniting.",
     description2: "As the film progresses, the focus shifts to the heartfelt vows exchanged under a canopy of flowers, the couple's eyes shimmering with emotion and promise. The camera captures the subtleties of their expressions, the exchange of rings, and the triumphant walk down the aisle, all set against the stunning backdrop of their chosen venue. The reception unfolds with laughter, dancing, and tears of joy, as speeches and toasts paint a picture of Natalie and Dylan’s love story. The film closes with laughter and dancing, a beautiful ending to their day and the beginning of their forever. This wedding film is not just a visual keepsake but a deeply moving narrative that encapsulates the magic of Natalie and Dylan’s love, promising to evoke memories and emotions for years to come.",
@@ -44,7 +44,7 @@ const WeddingVideos = () => {
     <div className="brandsPabloPage">
       <div className='logo-container'>
         <Link to="/">
-          <img src="https://i.ibb.co/T1mjtcK/o-5.png" alt="Back" className="logo2" />
+          <img src="https://i.ibb.co/XD4kJmq/Untitled-design-64.png" alt="Back" className="logo2" />
         </Link>
       </div>
       <div className="videoCarouselWrapper">
@@ -56,7 +56,7 @@ const WeddingVideos = () => {
                 loop
                 controls={true}
                 style={{ width: '70%', height: '70vh' }}
-                className="video-wrapper"
+                className="video-wrapper1"
               ></video>
             </div>
           ))}

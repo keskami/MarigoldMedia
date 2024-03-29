@@ -93,7 +93,7 @@
 
 /* Existing styles... */
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 900px) {
   .feature-boxes, .core-benefit-boxes {
     flex-direction: column;
     align-items: center;
@@ -108,6 +108,12 @@
     width: calc(70%); /* full width minus left/right margin */
     height: auto; /* height can adjust to content */
     margin: 20px 30px; /* 20px top/bottom, 30px left/right margin */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .feature-box, .core-benefit-box {
+    width: calc(90%); /* full width minus left/right margin */
   }
 }
 

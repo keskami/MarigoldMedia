@@ -48,12 +48,11 @@
 
 .text-carousel {
   text-align: left;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
   font-size: 3.5rem;
   font-weight: 700;
   overflow: hidden;
-  height: 65px; /* Adjust based on your text size */
-  
+  height: 66px; /* Adjust based on your text size */
 }
 
 .text-carousel div {
@@ -86,7 +85,7 @@
     width: 80%; /* Allows more space for text */
   }
   .text-carousel {
-    height: 48px;
+    height: 51px;
   }
   .container p {
     width: 70%;
@@ -106,18 +105,34 @@
   .text-carousel div {
     animation: none;
   }
+
+  #title-row {
+    width: 100%;
+  }
+
   .text-carousel {
-    height: 36px;
+    height: 34px;
+    width: 250px;
+    margin: 0 0 0 10px;
+  }
+
+  #true {
+    padding: 0;
+    margin: 0 0 0 10px;
   }
   
   .about-us p {
     text-align: center;
   }
+
+  .container p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
-  .container {
-    width: 85%; /* Further increase the width on very small screens */
+  .container p{
+    width: 90%; /* Further increase the width on very small screens */
   }
 
   .text-carousel, #true, .about-us h3 {

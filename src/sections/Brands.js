@@ -6,7 +6,7 @@ const videosRow1 = [
   "https://storage.cloud.google.com/marigold_videos/EVENTS%20-%20Boiler%20Vintage%20event%20recap%20reel.mp4",
   "https://storage.cloud.google.com/marigold_videos/BRANDS%20-%20Coca%20Cola%20Spec%20Ad%20(1).mp4",
   "https://storage.cloud.google.com/marigold_videos/BRANDS%20-%20Personal%20Athlete%20Promo%20for%20Urban%20Outfitters.mp4",
-  "https://storage.cloud.google.com/marigold_videos/BRANDS%20-%20Trifecta%20Watches%20-%20Basketball%20Promo%20(1).mp4"
+  "https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Trifecta%20Watches%20-%20Basketball%20Promo.mp4"
 ];
 
 const imagesRow1 = [
@@ -117,6 +117,7 @@ const Brands = () => {
         <video
           controls
           title={`Video ${i}`}  
+          className = "video1"
         >
           <source src={videos[i]} type="video/mp4" />
           Your browser does not support the video tag.

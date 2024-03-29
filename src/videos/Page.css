@@ -39,12 +39,24 @@
     width: 100%; /* Full width of the carousel */
     height: 100vh; /* Full viewport height */
   }
+  .slick-dots li{
+    color: purple;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .slick-dots {
+    position:absolute;
+    bottom: 10%;
+  }
   
-  .video-slide video {
-    position: absolute;
+  .video-slide .video-wrapper1 {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the element */
+    width: 70%;
+    height: 60vh;
+    background-color: white;
     /* No need to set position: relative here */
   }
   
@@ -60,7 +72,7 @@
   
   .videoDescriptionContainer {
     position: relative;
-    margin-top: 100vh; /* Start showing the description after the fixed carousel space */
+    margin-top: 80vh; /* Start showing the description after the fixed carousel space */
     z-index: 100;
     background-color: white;
     height: auto;
@@ -70,7 +82,7 @@
 
   .videoHeader {
     position: absolute;
-    bottom: 5%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the element */
     text-align: center;
@@ -87,7 +99,7 @@
     margin: 4% auto;
     font-size: 25px;
     background-color: white;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
   }
@@ -97,19 +109,41 @@
     font-weight: 500;
   }
 
-  @media (max-width: 1300px) {
-    .videoHeader {
-      font-size: 25px;
-    }
-  }
-
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     .videoHeader {
       font-size: 20px;
+      top: 20%;
     }
     .videoDescription {
       font-size: 20px;
     }
+    .video-slide .video-wrapper {
+      top:50%;
+      width: 655px;
+      height: 400px;
+    }
+    .slick-prev:before, .slick-next:before {
+      font-size: 35px;
+    }
   }
-  
-  
+
+  @media (max-width: 668px) {
+    .videoDescription {
+      font-family: "Hind Siliguri", sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      width: 95%;
+    }
+    .slick-prev:before, .slick-next:before {
+      font-size: 30px;
+    }
+    .video-slide video {
+      top:50%;
+      width: 445px;
+      height: 390px;
+    }
+    .videoHeader {
+      position: absolute;
+      top: 23%;
+    }
+  }

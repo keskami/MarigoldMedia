@@ -1,7 +1,9 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 .slick-prev:before, .slick-next:before {
   height: 100%;
@@ -9,28 +11,75 @@
   font-size: 50px;
 }
 
-.slick-prev {
+.slick-slider, .slick-list, .slick-track {
+  width: 100%;
+  height: auto; /* Adjust based on the video aspect ratio */
+}
+
+.video-wrapper1  {
+  position: relative;
+  width: 100%; /* This makes the video width responsive to the container */
+  /* Height is adjusted according to the video's aspect ratio */
+  padding-top: 56.25%; /* Default for 16:9 aspect ratio videos */
+  overflow: hidden;
+}
+
+
+.video-wrapper1 video {
+  width: 100vw; /* Viewport width */
+  height: 100vh; /* Viewport height */
+  object-fit: cover; /* Cover the entire area; might crop the video */
+  position: absolute;
+  top: 0;
   left: 0;
-  z-index: 80;
-  width: 60px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure it's above the video layer */
+}
+
+.slick-prev {
+  left: 0; /* Adjust as necessary */
 }
 
 .slick-next {
-  right: 0;
-  width: 60px;
+  right: 30px; /* Adjust as necessary */
 }
 
-.video-carousel {
-  width: 100%;
-  margin: 0 auto; /* Center carousel */
-  padding: 0;
+.video-carousel1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the start vertically */
 }
 
-.video-carousel .video-slide {
+.video-carousel1 .video-slide1 {
     position: relative;
 }
 
-.video-carousel .caption {
+.video-caption {
+  position: absolute;
+  bottom: 15%; /* Adjust based on your preference */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff; /* Adjust the color based on your preference */
+  text-align: center;
+  padding: 10px;
+}
+
+.caption-title {
+  font-size: 50px;
+}
+
+.caption-body {
+  font-size: 40px;
+}
+
+
+.video-carousel1 .caption {
     position: absolute;
     bottom: 160px;
     left: 100px;
@@ -39,7 +88,7 @@
     text-align: left;
 }
 
-.video-wrapper {
+.video-wrapper1 {
     position: relative;
     width: 100%; /* Adjust width as necessary */
 }
@@ -49,11 +98,10 @@
     font-weight: bold;
 }
 
-@media only screen and (max-width: 800px) {
-  .video-carousel {
-    height: 520px;
+@media (max-width: 1480px) {
+  .video-carousel1 {
   }
-  .video-carousel .caption {
+  .video-carousel1 .caption {
     margin: auto;
     font-size: 20px;
     text-align: center;
@@ -61,37 +109,41 @@
   .dir-name {
     font-size: 40px;
   }
-  video {
-    margin-top:20%;
+  .slick-prev:before, .slick-next:before {
+    height: 100%;
+    padding: 40px 0;
+    font-size: 40px;
   }
-  .slick-prev {
-    top:60%;
+  .video-caption {
+    bottom: 10%; /* Adjust based on your preference */
   }
-  .slick-next {
-    top:60%;
+  .caption-title {
+    font-size: 40px;
+  }
+  
+  .caption-body {
+    font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 668px) {
-  .video-carousel {
-    height: 390px;
+@media (max-width: 768px) {
+  .video-carousel1 {
+   
   }
   .slick-prev:before, .slick-next:before {
     font-size: 30px;
   }
   video {
-    margin-top:15%;
+    margin-top:5%;
   }
-  .slick-prev {
-    top:57%;
+  .video-caption {
+    bottom: 10%; /* Adjust based on your preference */
   }
-  .slick-next {
-    top:57%;
+  .caption-title {
+    font-size: 30px;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .video-carousel {
-    height: 360px;
+  
+  .caption-body {
+    font-size: 20px;
   }
 }

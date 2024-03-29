@@ -7,10 +7,10 @@
   border-radius: 15px;
   box-sizing: border-box;
   position: fixed;
-  top: 60px;
-  width: 700px;
+  top: 20px;
+  width: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   background: white;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .navbar img {
-  width: 30px;
+  width: 200px;
 }
 
 .nav-links {
@@ -47,7 +47,7 @@
   text-decoration: none;
   margin: 10px 20px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .navbar a.contact-us {
@@ -61,7 +61,15 @@
   display: none;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1450px) {
+  .navbar {
+    width: 100%;
+    top:0;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .navbar {
     width: 80%;
   }
@@ -75,5 +83,10 @@
 
   .mobile-menu-icon {
     display: block;
+  }
+  .navbar {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
   }
 }

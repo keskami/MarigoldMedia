@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo"><img src="https://i.ibb.co/T1mjtcK/o-5.png" alt="0"></img></div>
+      <div className="logo"><img src="https://i.ibb.co/kQcz9SN/Untitled-design-62.png" alt="0"></img></div>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>

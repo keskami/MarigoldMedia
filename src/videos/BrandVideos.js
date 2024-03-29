@@ -16,7 +16,7 @@ const videos = [
   },
   {
     id: 2,
-    src: 'https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Trifecta%20Watches%20-%20Basketball%20Promo%20(1).mp4',
+    src: 'https://storage.googleapis.com/marigold_videos/BRANDS%20-%20Trifecta%20Watches%20-%20Basketball%20Promo.mp4',
     director: "Director: Pablo Villa",
     description1: "In the tranquility of an empty basketball court, the Trifecta Watches promo captures the solitary figure of Mason Gillis immersed in the quiet intensity of the game. Every frame is a juxtaposition of the athlete’s relaxed yet precise movements against the ticking precision of the Trifecta Watch. The watch, elegantly featured on Gillis's wrist, becomes a testament to the brand’s seamless blend of functionality and style. The camera lingers on the details: the hands of the watch sweeping past numbers, the glint of light on its face, the ease with which it displays messages — all emphasizing its role as a companion for both the quiet and the chaotic moments of life.",
     description2: "Directorially, the promo is crafted with a clear intention to evoke a sense of calm power. There is a palpable respect for the game’s quieter side, the solo practice where the only opponent is time itself. This vision is artfully realized through smooth slow-motion sequences, crisp sound design that echoes the solitude of the court, and a deliberate color grading that casts everything in a gentle, amber-tinged light — reflective of Trifecta's brand identity. The watch isn't just a feature; it’s a character that stands for the poise and potential of every second. This production isn't about the spectacle of basketball; it’s a showcase of the sport as a form of personal meditation and the watch as a silent witness to the passage of time.",
@@ -50,7 +50,7 @@ const videos = [
     director: "Director: Pablo Villa",
     description1: "The Insomnia Cookies Challenge Announcement is a heartwarming sequence that spotlights Abby, the reigning Ultimate Cookie Lover, whose enthusiasm for cookies is as infectious as it is genuine. Throughout the video, we see her immersed in the world of cookies—her eyes light up, her dances around with cookies in her hands, and her voice exudes excitement as she details the rules and prizes of this year's challenge. The camera captures a warm smile and an artful array of cookies in all their sugary glory, highlighting the joy that these baked goods bring.",
     description2: "Behind the scenes, the director's vision is clear: to draw the viewer into the simple pleasure of cookies through Abby's narrative. The focus is on her expressive storytelling, her evident love for the cookies, and the cookies themselves, each shot designed to engage the senses and entice cookie lovers to share their own experiences. It’s a celebration of personal passion and the shared community spirit that Insomnia Cookies fosters. This announcement video is not just a call to action; it's a tribute to the love of cookies, inviting others to join in the challenge and express their fondness for this universal treat.",
-    header: 'Insomnia Cookies Challenge Announcement' // Example header text
+    header: 'Insomnia Cookies Challenge' // Example header text
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ const BrandVideos = () => {
     <div className="brandsPabloPage">
       <div className='logo-container'>
         <Link to="/">
-          <img src="https://i.ibb.co/T1mjtcK/o-5.png" alt="Back" className="logo2" />
+          <img src="https://i.ibb.co/XD4kJmq/Untitled-design-64.png" alt="Back" className="logo2" />
         </Link>
       </div>
       <div className="videoCarouselWrapper">
@@ -93,8 +93,9 @@ const BrandVideos = () => {
                 src={video.src}
                 loop
                 controls={true}
+                playerControls = {1}
                 style={{ width: '70%', height: '70vh' }}
-                className="video-wrapper"
+                className="video-wrapper1"
               ></video>
             </div>
           ))}

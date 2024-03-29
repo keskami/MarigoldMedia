@@ -42,7 +42,7 @@ const PictureVideos = () => {
     <div className="brandsPabloPage">
       <div className='logo-container'>
         <Link to="/">
-          <img src="https://i.ibb.co/T1mjtcK/o-5.png" alt="Back" className="logo2" />
+          <img src="https://i.ibb.co/XD4kJmq/Untitled-design-64.png" alt="Back" className="logo2" />
         </Link>
       </div>
       <div className="videoCarouselWrapper">
@@ -54,7 +54,7 @@ const PictureVideos = () => {
                 loop
                 controls={true}
                 style={{ width: '70%', height: '70vh' }}
-                className="video-wrapper"
+                className="video-wrapper1"
               ></video>
             </div>
           ))}
