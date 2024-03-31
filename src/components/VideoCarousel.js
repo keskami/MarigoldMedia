@@ -47,11 +47,11 @@ const VideoCarousel = () => {
 
 
   return (
-    <div className="video-carousel1" style={{ height: sliderHeight }}>
+    <div className="video-carousel2" style={{ height: sliderHeight }}>
       <Slider {...settings} className="custom">
         {videos.map((video, index) => (
           <div className="video-slide1" key={index}>
-            <div className="video-wrapper1">
+            <div className="video-wrapper2">
               <video
                 src={video.src}
                 autoPlay

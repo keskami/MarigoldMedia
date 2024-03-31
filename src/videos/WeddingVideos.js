@@ -55,7 +55,7 @@ const WeddingVideos = () => {
                 src={video.src}
                 loop
                 controls={true}
-                style={{ width: '70%', height: '70vh' }}
+                style={{ width: '70%', height: '65vh' }}
                 className="video-wrapper1"
               ></video>
             </div>

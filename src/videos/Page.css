@@ -7,15 +7,17 @@
     position: relative;
     padding-top: 100vh;
   }
+  
 
   .logo-container {
     position: fixed; /* Keep the bar fixed at the top */
     top: 0;
-    left: 0;
+    left: 1%;
     width: 100%; /* Stretch across the full screen width */
     background-color: black; /* Black background */
     z-index: 110; /* Ensure it's above most other elements but below the logo if needed */
     padding: 10px 0; /* Add some vertical padding for aesthetic spacing */
+    height: 12%;
   }
   
   .logo2 {
@@ -33,11 +35,21 @@
     z-index: 10;
     background-color: black;
   }
+
+  .slick-prev {
+    top: 50%;
+    left: 0; /* Adjust as necessary */
+  }
+  
+  .slick-next {
+    top: 50%;
+    right: 0; /* Adjust as necessary */
+  }
   
   .video-slide {
     position: relative; /* Ensures a positioning context */
     width: 100%; /* Full width of the carousel */
-    height: 100vh; /* Full viewport height */
+    height: 90vh; /* Full viewport height */
   }
   .slick-dots li{
     color: purple;
@@ -51,12 +63,11 @@
   
   .video-slide .video-wrapper1 {
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the element */
-    width: 70%;
-    height: 60vh;
-    background-color: white;
+    width: 7  0%;
+    height: 90vh;
     /* No need to set position: relative here */
   }
   
@@ -117,13 +128,17 @@
     .videoDescription {
       font-size: 20px;
     }
-    .video-slide .video-wrapper {
-      top:50%;
+    .video-slide .video-wrapper1 {
+      top: 55%;
       width: 655px;
       height: 400px;
     }
     .slick-prev:before, .slick-next:before {
       font-size: 35px;
+    }
+    .logo-container {
+      left: 1%;
+      height: 10%;
     }
   }
 
@@ -137,7 +152,7 @@
     .slick-prev:before, .slick-next:before {
       font-size: 30px;
     }
-    .video-slide video {
+    .video-slide .video-wrapper1 {
       top:50%;
       width: 445px;
       height: 390px;
@@ -145,5 +160,9 @@
     .videoHeader {
       position: absolute;
       top: 23%;
+    }
+    .logo-container {
+      left: 1%;
+      height: 8%;
     }
   }

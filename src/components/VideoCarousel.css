@@ -16,7 +16,7 @@
   height: auto; /* Adjust based on the video aspect ratio */
 }
 
-.video-wrapper1  {
+.video-wrapper2  {
   position: relative;
   width: 100%; /* This makes the video width responsive to the container */
   /* Height is adjusted according to the video's aspect ratio */
@@ -25,9 +25,7 @@
 }
 
 
-.video-wrapper1 video {
-  width: 100vw; /* Viewport width */
-  height: 100vh; /* Viewport height */
+.video-wrapper2 video {
   object-fit: cover; /* Cover the entire area; might crop the video */
   position: absolute;
   top: 0;
@@ -37,6 +35,7 @@
 .slick-prev, .slick-next {
   position: absolute;
   top: 40%;
+  width: 80px;
   transform: translateY(-50%);
   z-index: 1; /* Ensure it's above the video layer */
 }
@@ -46,17 +45,17 @@
 }
 
 .slick-next {
-  right: 30px; /* Adjust as necessary */
+  right: 0; /* Adjust as necessary */
 }
 
-.video-carousel1 {
+.video-carousel2 {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
   justify-content: flex-start; /* Align items to the start vertically */
 }
 
-.video-carousel1 .video-slide1 {
+.video-carousel2 .video-slide1 {
     position: relative;
 }
 
@@ -79,7 +78,7 @@
 }
 
 
-.video-carousel1 .caption {
+.video-carousel2 .caption {
     position: absolute;
     bottom: 160px;
     left: 100px;
@@ -99,9 +98,8 @@
 }
 
 @media (max-width: 1480px) {
-  .video-carousel1 {
-  }
-  .video-carousel1 .caption {
+
+  .video-carousel2 .caption {
     margin: auto;
     font-size: 20px;
     text-align: center;
@@ -127,14 +125,9 @@
 }
 
 @media (max-width: 768px) {
-  .video-carousel1 {
-   
-  }
+
   .slick-prev:before, .slick-next:before {
     font-size: 30px;
-  }
-  video {
-    margin-top:5%;
   }
   .video-caption {
     bottom: 10%; /* Adjust based on your preference */

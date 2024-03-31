@@ -94,7 +94,7 @@ const BrandVideos = () => {
                 loop
                 controls={true}
                 playerControls = {1}
-                style={{ width: '70%', height: '70vh' }}
+                style={{ width: '70%', height: '65vh' }}
                 className="video-wrapper1"
               ></video>
             </div>
